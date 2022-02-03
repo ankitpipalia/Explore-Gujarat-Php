@@ -1,0 +1,100 @@
+
+/* utility classes */
+.text-primary{
+    font-size: 1.6rem;
+}
+
+.text-secondary{
+    font-size: 1.2rem;
+}
+
+
+.text-para{
+    font-size: 0.7rem;
+}
+
+/* header */
+header{
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem;
+    overflow: hidden;
+}
+/* header menu item */
+header .menu-item a{
+    margin-right: 0.7rem;
+    font-size: 0.8rem;
+}
+
+/* home */
+#home{
+    padding: 2rem;
+    height: 26rem;
+}
+
+/* service and spot */
+#service-menu,
+#spot-menu{
+    overflow: hidden;
+    flex-wrap: wrap; 
+}
+.service-item{
+    height: auto
+}
+
+/* quote */
+#quote img{
+    margin: 1.875rem 0px 0px 0.2rem;    
+}
+
+
+/* registration */
+#registration{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    height: 28rem;
+}
+
+#registration::before{
+    height: 83%;
+}
+
+#reg-form{
+    top: auto;
+    left: auto;
+    padding: 0.1rem 2rem;
+    margin: 1.5rem 0rem;
+}
+
+/* footer */
+#footer{
+    padding: 1.25rem 1rem;
+    flex-direction: column;
+}
+
+
+.footer-item{
+    margin: 0px 0.1rem;  
+}
+
+#about{
+    width: auto;
+}
+
+#contact{
+    width: auto;
+}
+
+.contact-item p{
+    padding: 0.688rem 0.438rem;
+}
+
+#contact h2{
+   padding-top: 1.875rem;
+   padding-bottom: 0px;
+}
+
+
+
+
