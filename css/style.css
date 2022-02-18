@@ -168,7 +168,7 @@ header .menu-item a:hover{
 
 .service-item,
 .spot-item{
-    border: 2px solid white;
+    border: 2px solid black;
     width: 18.75rem;
     margin: 0.625rem;
     transition: all 0.2s ease-in-out 0s;
@@ -193,6 +193,46 @@ header .menu-item a:hover{
     padding-top: 3.125rem;    
 }
 
+
+/* services and citys */
+#service-menu,
+#city-menu{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+/* service and city section items' styling */
+.service-item{
+    height: 27.6rem
+}
+
+.service-item,
+.city-item{
+    border: 2px solid black;
+    width: 18.75rem;
+    margin: 0.625rem;
+    transition: all 0.2s ease-in-out 0s;
+    cursor:pointer
+}
+
+.service-item:hover,
+.city-item:hover{
+    transform: scale(1.06);
+    background-color: rgb(41, 39, 39);
+
+}
+
+.service-item img,
+.city-item img{
+    height: 8.75rem;
+    padding: 0.438rem;
+}
+
+#city{
+    margin-bottom: 1.875rem;
+    padding-top: 3.125rem;    
+}
 
 /* quote */
 #quote img{
