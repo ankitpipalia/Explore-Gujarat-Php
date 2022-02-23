@@ -67,7 +67,7 @@ html{
 }
 
 body{
-    background-color: black;
+    background-color: #0c151f;
 }
 
 
@@ -156,6 +156,7 @@ header .menu-item a:hover{
 /* services and spots */
 #service-menu,
 #spot-menu{
+    background-color: #0c151f;
     display: flex;
     flex-direction: row;
     
@@ -197,6 +198,7 @@ header .menu-item a:hover{
 /* services and citys */
 #service-menu,
 #city-menu{
+    background-color: #0c151f;
     display: flex;
     flex-direction: row;
     

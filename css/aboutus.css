@@ -1,0 +1,61 @@
+.separator-type, .title-type, .intro-type, .content-type .intro-type p {
+    position: relative;
+}
+#product-header-section, .intro-type .container {
+    padding: 68px 15px 72px !important;
+}
+.parallax {
+    background-attachment: inherit !important;
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: -10;
+}
+.company-heading h1 {
+    margin-bottom: 40px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 700 !important;
+    text-align: center;
+}
+#section{
+    background-color: #fff;
+}
+.seo-header, .product-header, .intro-type .container h1.white, .company-heading h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100 !important;
+    text-transform: capitalize;
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.red-border {
+    width: 50%;
+    border-bottom: 1px solid #d2282e;
+    margin: 0 auto;
+    height: 16px;
+}
+.ct-u-size22 {
+    font-size: 22px;
+}
+.ct-u-fontWeight300 {
+    font-weight: 300;
+}
+.marginTop40 {
+    margin-top: 40px !important;
+}
+.ct-u-paddingBoth100 {
+    padding: 100px 15px;
+}
+.ct-u-paddingBoth100 {
+    padding: 100px 15px;
+}
+.company-sections h2, .careers-sections h2, .perks-section h2 {
+    font-weight: 800;
+    font-size: 50px;
+}
+.company-sections h2, .company-sections h3, .careers-sections h2, .perks-section h2 {
+    font-family: 'proxima-nova', sans-serif;
+}  
