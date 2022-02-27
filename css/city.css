@@ -8,10 +8,11 @@ html{
 }
 
 .text-secondary{
+    text-align: justify;
     color: white;
     font-family: 'Lato', sans-serif;
     font-size: 1.563rem;
-    padding: 0.313rem; 
+ 
 }
 
 
