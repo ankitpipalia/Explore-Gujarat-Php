@@ -4,6 +4,9 @@
 #product-header-section, .intro-type .container {
     padding: 68px 15px 72px !important;
 }
+.title{
+    text-align: center;
+}
 .parallax {
     background-attachment: inherit !important;
     background-repeat: repeat;
@@ -17,15 +20,15 @@
 .company-heading h1 {
     margin-bottom: 40px;
     line-height: 80px;
-    color: #fff;
+    color: white;
     font-weight: 700 !important;
     text-align: center;
 }
 #section{
-    background-color: #fff;
+    background-color: white;
 }
 .seo-header, .product-header, .intro-type .container h1.white, .company-heading h1 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 100 !important;
     text-transform: capitalize;
     font-size: 65px;
@@ -33,9 +36,9 @@
 }
 .red-border {
     width: 50%;
-    border-bottom: 1px solid #d2282e;
-    margin: 0 auto;
-    height: 16px;
+    border-bottom: 2px solid #d2282e;
+    margin: auto;
+    height: 0.1px;
 }
 .ct-u-size22 {
     font-size: 22px;
@@ -58,4 +61,57 @@
 }
 .company-sections h2, .company-sections h3, .careers-sections h2, .perks-section h2 {
     font-family: 'proxima-nova', sans-serif;
-}  
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* adding background of black with opacity */
+header::before{
+    content: ""; 
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;  
+}
+
+/* header + footer: logo and name */
+.logo img{
+    height: 3rem; 
+}
+
+.logo h3{
+    padding-top: 0rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* header menu styling */
+header ul{
+    display: flex; 
+}
+
+header #menu{
+    padding-top: 4.625rem;
+}
+header .menu-item {
+    list-style: none;
+}
+
+header .menu-item a{
+    text-decoration: none;
+    margin-right: 1.563rem;
+    font-size: 1.063rem;
+    font-weight: bolder;
+    font-family:  'Lato', sans-serif;
+}
+header .menu-item a:hover{
+   color: rgb(255, 166, 0);
+}
