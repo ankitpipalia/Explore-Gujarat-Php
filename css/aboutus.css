@@ -172,14 +172,14 @@ header ul {
     margin-left: 15px;
 }
 .secondary-text{
-    text-align: justify;
+    text-align: center;
     color: white;
     font-family: 'Lato', sans-serif;
-    margin-right: 15px;
-    margin-left: 15px;  
+    margin-right: 150px;
+    margin-left: 150px;  
 }
 .main-text{
-    text-align: justify;
+    text-align: center;
     color: white;
     font-family: 'Lato', sans-serif;
     margin-right: 15px;
@@ -187,7 +187,26 @@ header ul {
 }
 
 .title-text{
-    text-align: justify;
+    text-align: center; 
     color: white;
     font-family: 'Lato', sans-serif;
+}
+.user-img{
+    display: block;
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 100px;
+}
+
+.user-name{
+    margin-top: 60px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.user-email{
+    color: white;
+    font-family: 'Lato', sans-serif;
+
 }
