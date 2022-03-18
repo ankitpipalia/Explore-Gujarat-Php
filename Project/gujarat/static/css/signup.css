@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/* utility classes */
+.text-primary{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 3.125rem;
+    padding: 1.125rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.text-secondary{
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.563rem;
+    padding: 0.313rem; 
+}
+.resetlink{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.938rem;
+    padding: 0.938rem;
+    font-weight: bold;
+}
+.text-para{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.938rem;
+    padding: 0.938rem;
+    font-weight: bold;
+    padding-right: 2rem;
+}
+
+.center{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.btn{
+    outline: none;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 0.625rem 1.25rem;
+    border-radius: 1.438rem;
+    cursor: pointer;
+    margin: 1.25rem auto;
+    width: 100%;
+    transition: background-color 0.5s ease 0s;   
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+i{
+    display: inline-block;
+}
+
+.empty{
+    height: 3.75rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    height: 50rem;
+}
+
+.logo img{
+    height: 3.125rem;
+    padding: 0px 0.938rem 0px 1.25rem; 
+}
+
+.logo h3{
+    padding-top: 0.813rem; 
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* registration */
+#registration{
+    height: auto;
+}
+
+/* adding background-image for registration section */
+#registration::before{
+    background:url("{% static 'images/bg-registration.jpg' %}") no-repeat center center/cover;
+    opacity: 0.7; 
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+/* styling registration form */
+#reg-form{
+    display: inline-block;
+    position: relative;
+    top: 9rem;
+    left: 66%;
+    padding: 1.563rem 2.5rem;
+    border-radius: 1.875rem;
+}
+
+/* adding background of .5 opacity */
+#reg-form::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left: 0;
+    border-radius: 1.875rem;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+#reg-form .form-group{
+    display: block;
+    margin:auto;
+    text-align: justify;
+    border-bottom: .1px solid white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        input[type=number] {
+            -moz-appearance:textfield;
+        }
+
+input::placeholder{
+    overflow:visible;
+}        
+
+#reg-form input{   
+    background-color: transparent;
+    border: none; 
+    outline: none;  
+}
+
+#reg-form .radiobtn{
+    display: inline;
+    width: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+::placeholder { 
+    color: whitesmoke;
+}
+#reg-form h6{
+    display: inline;
+    padding: 0px;
+
+}
+#reg-form .gender{
+    margin-top: 1.25rem;
+}

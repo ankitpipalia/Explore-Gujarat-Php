@@ -1,0 +1,212 @@
+/* utility classes */
+.text-primary {
+    font-size: 1.6rem;
+}
+
+.text-secondary {
+    font-size: 1.2rem;
+}
+
+
+.text-para {
+    font-size: 0.7rem;
+}
+
+/* header */
+header {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.4rem;
+    overflow: hidden;
+}
+
+/* header menu item */
+header .menu-item a {
+    margin-right: 0.7rem;
+    font-size: 0.8rem;
+}
+
+
+/* footer */
+#footer {
+    padding: 1.25rem 1rem;
+    flex-direction: column;
+}
+
+
+.footer-item {
+    margin: 0px 0.1rem;
+}
+
+#about {
+    width: auto;
+}
+
+#contact {
+    width: auto;
+}
+
+.contact-item p {
+    padding: 0.688rem 0.438rem;
+}
+
+#contact h2 {
+    padding-top: 1.875rem;
+    padding-bottom: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.text-primary {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.text-secondary {
+    text-align: justify;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.563rem;
+
+}
+
+
+.logo img {
+    height: 3.125rem;
+    padding: 0px 0.938rem 0px 1.25rem;
+}
+
+.logo h3 {
+    padding-top: 0.813rem;
+    font-family: 'Lato', sans-serif;
+}
+
+#about .logo {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0c151f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* adding background of black with opacity */
+header::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* header + footer: logo and name */
+.logo img {
+    height: 3.125rem;
+    padding: 0px 0.938rem 0px 1.25rem;
+}
+
+.logo h3 {
+    padding-top: 0.813rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* header menu styling */
+header ul {
+    display: flex;
+}
+
+.container {
+    padding: 68px 15px 72px !important;
+}
+
+.company-heading h1 {
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+    line-height: 80px;
+    color: #fff;
+    font-weight: 700 !important;
+    text-align: center;
+    font-size: 65px;
+}
+
+.red-border {
+    width: 50%;
+    border-bottom: 1px solid #d2282e;
+    margin: 0 auto;
+    height: 16px;
+}
+
+.extra-text {
+    text-align: justify;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.15rem;
+    margin-top: 40px !important;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.secondary-text{
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-right: 150px;
+    margin-left: 150px;  
+}
+.main-text{
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.title-text{
+    text-align: center; 
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+.user-img{
+    display: block;
+    float: left;
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 100px;
+}
+
+.user-name{
+    margin-top: 60px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.user-email{
+    color: white;
+    font-family: 'Lato', sans-serif;
+
+}

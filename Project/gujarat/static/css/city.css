@@ -1,0 +1,146 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.text-primary{
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+.text-secondary{
+    text-align: justify;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.563rem;
+ 
+}
+
+
+.logo img{
+    height: 3.125rem;
+    padding: 0px 0.938rem 0px 1.25rem; 
+}
+
+.logo h3{
+    padding-top: 0.813rem; 
+    font-family: 'Lato', sans-serif;
+}
+
+#about .logo{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #0c151f;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* adding background of black with opacity */
+header::before{
+    content: ""; 
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;  
+}
+
+/* header + footer: logo and name */
+.logo img{
+    height: 3.125rem;
+    padding: 0px 0.938rem 0px 1.25rem; 
+}
+
+.logo h3{
+    padding-top: 0.813rem; 
+    font-family: 'Lato', sans-serif;
+}
+
+/* header menu styling */
+header ul{
+    display: flex; 
+}
+
+mark{
+    background-color: #4285F4;
+}
+img{
+    float: left;
+    margin-right: 10px;
+
+}
+
+.city-title{
+    display: block;
+}
+
+.list-marker__index {
+    display: block;
+    font-size: 1.625rem;
+    color: #E5BF23;
+    line-height: 1.875rem;
+    font-weight: 600;
+    float: left;
+}
+
+.list-marker__total{
+    display: block;
+    font-size: .9rem;
+    color: lightgray;
+    line-height: 0.875rem;
+
+}
+
+.list-sc-item .list-marker {
+    float: left;
+    margin: 0 0.625rem 0.625rem;
+}
+
+.list-sc {
+    font-size: 1.125rem;
+    line-height: 1.6875;
+    font-family: Georgia,serif;
+}
+
+.city-text{
+    font-size: 1.25rem;
+    margin-right: 15px;
+}
+
+
+.map-d{
+    color: #4285F4;
+    text-align: right;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 15px;
+    text-decoration:none;
+    
+}
+.red-border {
+    width: 50%;
+    border-bottom: 2px solid #d2282e;
+    margin: auto;
+    height: 0.1px;
+}

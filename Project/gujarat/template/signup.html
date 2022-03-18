@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <!-- title for website -->
+    <title>Explore Gujarat</title>
+
+    <!-- css stylesheets -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/signup.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1216px)" href="{% static 'css/phone.css' %}">
+
+    <!-- website logo -->
+    <link rel="icon" href="{% static 'images/logo.png' %}">
+
+    <!-- link for google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+
+    <!-- link for fontawesome -->
+    <script src="https://kit.fontawesome.com/deb091a632.js" crossorigin="anonymous"></script>
+</head>
+<body background="{% static 'images/bg-registration.jpg' %}" style="background-repeat: no-repeat;background-size: 100%;">
+    <!-- registration -->
+    <section id="registration">
+        <!-- Registration Form -->
+        <form action="#" id="reg-form" method="post">
+            {% csrf_token %}
+            <!-- form header -->
+            <h1 class="text-primary center">Register Now!</h1>
+            <!-- form body -->
+            <div class="form-group">
+                <i class="fa fa-user"></i>
+                <input type="text" name="FName" id="name" placeholder="Enter your Name" class="text-para" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-envelope"></i>
+                <input type="email" name="Email" id="email" placeholder="Enter your Email" class="text-para" autocomplete="off">
+            </div>
+            <div class="form-group">
+                <i class="fa fa-unlock-alt"></i>
+                <input type="password" name="Password" id="password" placeholder="Enter your Password" class="text-para" autocomplete="off"> 
+            </div>
+            <div class="gender center">
+                <h6 class="text-para">Gender:</h6>
+                <input type="radio" name="Gender" value="male" class="radiobtn">
+                <h6 class="text-para">Male</h6>
+                <input type="radio" name="Gender" value="female" class="radiobtn">
+                <h6 class="text-para">Female</h6>
+            </div>
+            <!-- submit button -->
+            <button type="submit" class="btn text-para">Submit</button>
+        </form>
+    </section>
+</body>
+</html>

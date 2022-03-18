@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/gujarat/template/img/logo.png">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/city.css' %}">
+    <link rel="stylesheet" type="text/css" media="screen and (max-width: 1216px)" href="{% static 'css/phone.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Error Page</title>
+</head>
+
+<body>
+    {% csrf_token %}
+    <header>
+        <ul class="logo">
+            <a href="http://127.0.0.1:8000/index/"><img src="{% static 'images/logo.png' %}" alt="Explore Gujarat"></a>
+            <h3><a style="text-decoration:none" href="http://127.0.0.1:8000/index/">Explore Gujarat</a></h3>
+        </ul>
+    </header>
+    <br>
+    <br>
+
+
+
+    <center style="
+        text-align: center;
+        padding-top: 15%;
+        padding-bottom: 15%;
+    ">
+        <h1>Invalid Entry(-_-)!</h1>
+        <br>
+        <br>
+        <br>
+        <a style="text-decoration:none" href="http://127.0.0.1:8000/login/"><h2 style="color: #0000EE;">Login Here!!</h2></a>
+    </center>
+
+
+    <br>
+    <br>
+    <div class="col-md-8 col-md-offset-2">
+        <div class="red-border">
+            &nbsp;
+        </div>
+
+
+        <footer id="footer">
+            <!-- about section -->
+            <ul id="about" class="footer-item">
+                <ul class="logo">
+                    <img src="{% static 'images/logo.png' %}" alt="Explore Gujarat">
+                    <h3>Explore Gujarat</h3>
+                </ul>
+
+                <!-- copyright section -->
+                <ul class="footer-item" id="copyright">
+                    <p class="text-para" style="text-align: right;">2022 &copy; Explore Gujarat, all rights reserved
+                    </p>
+                </ul>
+        </footer>
+        </article>
+</body>
+
+
+</html>
