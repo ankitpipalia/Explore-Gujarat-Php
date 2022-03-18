@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,19 +6,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/gujarat/template/img/logo.png">
+    <link rel="icon" href="{% static 'images/logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/gujarat/template/css/city.css">
-    <link rel="stylesheet" href="/gujarat/template/css/phone.css">
+    <link rel="stylesheet" href="{% static 'css/city.css' %}">
+    <link rel="stylesheet" href="{% static 'css/phone.css' %}">
     <title>City</title>
 </head>
 
 <body>
     <header>
         <ul class="logo">
-            <a href="/gujarat/template/index.html"><img src="/gujarat/template/img/logo.png" alt="Explore Gujarat"></a>
-            <h3><a style="text-decoration:none" href="/gujarat/template/index.html">Explore Gujarat</a></h3>
+            <a href="http://127.0.0.1:8000/"><img src="{% static 'images/logo.png' %}" alt="Explore Gujarat"></a>
+            <h3><a style="text-decoration:none" href="http://127.0.0.1:8000/">Explore Gujarat</a></h3>
         </ul>
     </header>
     <br>
@@ -45,11 +46,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/ahmedabad.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/ahmedabad.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/WJNsNNiTCk6DEMTBA" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -86,11 +87,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/gandhinagar.jpg" width="550" height="310px" />
+                <img src="{% static 'images/cities/gandhinagar.jpg' %}" width="550" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/PffkJEaMBGGjdPs29" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -127,11 +128,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/kutch.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/kutch.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/ZAZjoH3FRAaf8SpE7" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -167,11 +168,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/rajkot.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/rajkot.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/iJRBcmcGvDhikUbA6" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -207,11 +208,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/surat.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/surat.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/HPMYe9kCefh2JyM39" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -248,11 +249,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/vadodara.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/vadodara.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/n3rYbrUUW6XfAUNz7" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -288,11 +289,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/bhavnagar.webp" width="550px" height="310px" />
+                <img src="{% static 'images/cities/bhavnagar.webp' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/noUaFHfkrYBUTahj7" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -328,11 +329,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/jamnager.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/jamnager.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/E9SvWtWn4gfVqqHq9" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -369,11 +370,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/junagadh.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/junagadh.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/ABRBhVBWP5SpZ8ph6" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -409,11 +410,11 @@
             </h2>
             <br>
             <div class="city-photo">
-                <img src="/gujarat/template/img/cities/anand.jpg" width="550px" height="310px" />
+                <img src="{% static 'images/cities/anand.jpg' %}" width="550px" height="310px" />
             </div>
             <br>
             <div class="map-d">
-                <img src="/gujarat/template/img/direction.png" width="30px" height="30px">
+                <img src="{% static 'images/direction.png' %}" width="30px" height="30px">
                 <a href="https://goo.gl/maps/3bvcV2dzuaUA54a28" target="_blank" class="map-d">View on
                     Google Maps</a>
             </div>
@@ -443,7 +444,7 @@
             <!-- about section -->
             <ul id="about" class="footer-item">
                 <ul class="logo">
-                    <img src="/gujarat/template/img/logo.png" alt="Explore Gujarat">
+                    <img src="{% static 'images/logo.png' %}" alt="Explore Gujarat">
                     <h3>Explore Gujarat</h3>
                 </ul>
                

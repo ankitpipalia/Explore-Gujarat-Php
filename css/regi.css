@@ -34,6 +34,7 @@
     font-size: 0.938rem;
     padding: 0.938rem;
     font-weight: bold;
+    padding-right: 2rem;
 }
 
 .center{
@@ -131,6 +132,7 @@ body{
 #reg-form .form-group{
     display: block;
     margin:auto;
+    text-align: justify;
     border-bottom: .1px solid white;
 }
 
@@ -141,7 +143,7 @@ input::-webkit-inner-spin-button {
         }
   
         input[type=number] {
-            -moz-appearance: textfield;
+            -moz-appearance:textfield;
         }
 
 input::placeholder{
