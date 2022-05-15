@@ -1,0 +1,234 @@
+<?php
+
+session_start();
+
+if(!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !==true)
+{
+    header("location: login.php");
+}
+
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title for website -->
+    <title>Explore Gujarat</title>
+
+    <!-- css stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1216px)" href="css/phone.css">
+
+    <!-- website logo -->
+    <link rel="icon" href="img/logo.png">
+
+    <!-- link for google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200&display=swap"
+        rel="stylesheet">
+
+    <!-- link for fontawesome -->
+    <script src="https://kit.fontawesome.com/deb091a632.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <!-- logo and company name -->
+        <ul class="logo">
+            <a href="#"><img src="img/logo.png" alt="Explore Gujarat"></a>
+            <h3><a style="text-decoration:none" href="#">Explore Gujarat</a></h3>
+        </ul>
+        <!-- menu/navbar -->
+        <ul id="menu">
+            <li class="menu-item"><a href="#spots">To Begin Your Journey</a></li>
+            <div class="dropdown">
+                <button class="dropbtn">City</button>
+                <div class="dropdown-content">
+                    <a href="/city.html#Ahmedabad">
+                        <p class="btn-list">Ahmedabad</p>
+                    </a>
+                    <a href="/city.html#Gandhinagar">
+                        <p class="btn-list">Gandhinagar</p>
+                    </a>
+                    <a href="/city.html#Kutch">
+                        <p class="btn-list">Kutch</p>
+                    </a>
+                    <a href="/city.html#Rajkot">
+                        <p class="btn-list">Rajkot</p>
+                    </a>
+                    <a href="/city.html">
+                        <p class="btn-list">View All</p>
+                    </a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Spots</button>
+                <div class="dropdown-content">
+                    <a href="/spots.html#Sabarmati-Ashram">
+                        <p class="btn-list">Sabarmati Ashram</p>
+                    </a>
+                    <a href="/spots.html#Statue-of-Unity">
+                        <p class="btn-list">Statue of Unity</p>
+                    </a>
+                    <a href="/spots.html#Ropeway-of-Girnar">
+                        <p class="btn-list">Ropeway of Girnar</p>
+                    </a>
+                    <a href="/spots.html#Rann-of-Kutch">
+                        <p class="btn-list">Rann of Kutch</p>
+                    </a>
+                    <a href="/spots.html">
+                        <p class="btn-list">View All</p>
+                    </a>
+                </div>
+            </div>
+            <li class="menu-item"><a href="aboutus.html">About Us</a></li>
+            <li class="menu-item"><a href="logout.php">Logout</a></li>
+            
+        </ul>
+    </header>
+
+        <section id="home">
+        <!-- short description of company -->
+        <h1 class="text-primary center">Are you ready to travel?</h1>
+        <!--<p class="text-para center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo porro libero
+                doloribus quasi veniam! Magnam dolores molestiae praesentium assumenda quo commodi voluptate, optio
+                tenetur dolor suscipit quisquam? Possimus pariatur quam inventore assumenda aut deserunt neque
+                consequuntur iusto totam itaque blanditiis, autem voluptatem nihil ut cumque fugiat voluptates quod quis
+                consectetur.</p>-->
+    </section>
+
+    <!-- quote -->
+    <section id="quote">
+        <img src="img/quote.png" alt="">
+    </section>
+
+    <!-- famous spots -->
+    <section id="spots">
+        <h1 class="text-primary center">Famous Spots</h1>
+        <a href="/spots.html">
+            <h3 class="view-all">View All</h3>
+        </a>
+
+        <div id="spot-menu" class="center">
+            <!-- Spot 1 -->
+            <div class="spot-item">
+                <a href="/spots.html#Statue-of-Unity" style="text-decoration: none;">
+                    <img src="img/spots/faisal-mosque.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Statue of Unity</h3>
+                    </figcaption>
+                </a>
+            </div>
+            <!-- Spot 2 -->
+            <div class="spot-item">
+                <a href="/spots.html#Sabarmati-Ashram" style="text-decoration: none;">
+                    <img src="img/spots/eiffel-tower.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Sabarmati Ashram</h3>
+                    </figcaption>
+                </a>
+            </div>
+            <!-- Spot 3 -->
+            <div class="spot-item">
+                <a href="/spots.html#Ropeway-of-Girnar" style="text-decoration: none;">
+                    <img src="img/spots/colosseum.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Ropeway of Girnar</h3>
+                    </figcaption>
+                </a>
+            </div>
+            <!-- Spot 4 -->
+            <div class="spot-item">
+                <a href="/spots.html#Rann-of-Kutch" style="text-decoration: none;">
+                    <img src="img/spots/status-of-liberty.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Rann of Kutch</h3>
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="City">
+        <h1 class="text-primary center">Famous City</h1>
+        <a href="/spots.html">
+            <h3 class="view-all">View All</h3>
+        </a>
+
+        <div id="city-menu" class="center">
+            <!-- Spot 1 -->
+            <div class="city-item">
+                <a href="/city.html#Rajkot" style="text-decoration: none;">
+                    <img src="img/spots/Rajkot.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Rajkot</h3>
+                    </figcaption>
+                </a>
+            </div>
+            <!-- Spot 2 -->
+            <div class="city-item">
+                <a href="/city.html#Ahmedabad" style="text-decoration: none;">
+                    <img src="img/spots/Ahmedabad.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Ahmedabad</h3>
+                    </figcaption>
+                </a>
+            </div>
+            <!-- Spot 3 -->
+            <div class="city-item">
+                <a href="/city.html#Gandhinagar" style="text-decoration: none;">
+                    <img src="img/spots/Gandhinagar.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Gandhinagar</h3>
+                    </figcaption>
+
+                </a>
+            </div>
+            <!-- Spot 4 -->
+            <div class="city-item">
+                <a href="/city.html#Kutch" style="text-decoration: none;">
+                    <img src="img/spots/Kutch.jpg">
+                    <figcaption class="text-secondary">
+                        <h3 style="font-family:  'Lato', sans-serif;">Kutch</h3>
+                    </figcaption>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+        <!-- about section -->
+        <ul id="about" class="footer-item">
+            <ul class="logo">
+                <img src="img/logo.png" alt="Explore Gujarat">
+                <h3>Explore Gujarat</h3>
+            </ul>
+            <p class="text-para">Come breathe in a bit of Gujarat.</p>
+        </ul>
+        <!-- contact us section -->
+        <ul id="contact" class="footer-item center">
+            <h2 class="text-secondary center">Contact Us</h2>
+            <div class="contact-item">
+                <!-- icon -->
+                <i class="fa fa-map-marker"></i>
+                <p class="text-para">Marwadi University , Rajkot. </p>
+            </div>
+            <div class="contact-item">
+                <!-- icon -->
+                <i class="fa fa-envelope"></i>
+                <p class="text-para">customercare@exploregujarat.com</p>
+            </div>
+        </ul>
+        <!-- copyright section -->
+        <ul class="footer-item " id="copyright">
+            <p class="text-para">2022 &copy; Explore Gujarat, all rights reserved </p>
+        </ul>
+
+    </body>
+</html>
