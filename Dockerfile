@@ -25,7 +25,8 @@ RUN chmod 777 /etc/nginx/conf.d/default.conf
 RUN mkdir -p /var/run/php
 RUN touch /var/run/php/www.sock
 RUN chown nginx:nginx /var/run/php/www.sock
+RUN chmod 777 /var/run/php/www.sock
 
 RUN /etc/init.d/mariadb start
 
-ENTRYPOINT service php7.4-fpm start && /etc/init.d/nginx start && /etc/init.d/mariadb start && /var/www/html/script && /var/www/html/script2 && /bin/bash
+ENTRYPOINT service php7.4-fpm start && /etc/init.d/nginx start && /etc/init.d/mariadb start && /bin/bash
