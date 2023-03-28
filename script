@@ -1,0 +1,3 @@
+#!/bin/bash
+mysql -e "CREATE DATABASE gujarat"
+mysql -u root gujarat < gujarat_database.sql

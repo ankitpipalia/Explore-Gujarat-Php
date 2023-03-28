@@ -11,7 +11,7 @@ RUN apt-get --fix-broken install
 
 RUN rm -rf /var/www/html/
 RUN git clone https://github.com/ankitpipalia/Explore-Gujarat-Php.git /var/www/html
-
+RUN chmod 777 /var/www/html/script
 WORKDIR /var/www/html
 
 RUN sed -i "s,listen = /run/php/php7.4-fpm.sock,listen = /var/run/php/www.sock,g" /etc/php/7.4/fpm/pool.d/www.conf
@@ -19,4 +19,4 @@ RUN mkdir -p /var/run/php
 RUN touch /var/run/php/www.sock
 RUN chown nginx:nginx /var/run/php/www.sock
 
-ENTRYPOINT service php7.4-fpm start && /etc/init.d/nginx start && /etc/init.d/mariadb start && /bin/bash
+ENTRYPOINT service php7.4-fpm start && /etc/init.d/nginx start && /etc/init.d/mariadb start && /var/www/html/script && /bin/bash
