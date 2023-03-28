@@ -8,10 +8,13 @@ RUN apt-get install php7.4-fpm php7.4-common php7.4-dom php7.4-intl php7.4-mysql
 RUN apt-get -y install mariadb-plugin-rocksdb && rm -rf /var/cache/apt/lists/*
 RUN apt-get install mariadb-server -y
 RUN apt-get --fix-broken install
+RUN apt-get install expect -y
 
 RUN rm -rf /var/www/html/
 RUN git clone https://github.com/ankitpipalia/Explore-Gujarat-Php.git /var/www/html
 RUN chmod 777 /var/www/html/script
+RUN chmod 777 /var/www/html/script2
+
 WORKDIR /var/www/html
 
 RUN sed -i "s,listen = /run/php/php7.4-fpm.sock,listen = /var/run/php/www.sock,g" /etc/php/7.4/fpm/pool.d/www.conf
