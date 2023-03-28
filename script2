@@ -1,29 +1,28 @@
 #!/usr/bin/expect
 
-set timeout -1
+set MYSQL_ROOT_PASSWORD=root1234
 
-# Set the password for the MySQL root user
-set mysql_password "root1234"
-
-# Run mysql_secure_installation without prompts
 spawn mysql_secure_installation
 
 expect "Enter password for user root:"
-send "$mysql_password\r"
+send "$MYSQL_ROOT_PASSWORD\r"
 
-expect "Change the password for root ? ((Press y|Y for Yes, any other key for No) :"
+expect "New password:"
+send "$MYSQL_ROOT_PASSWORD\r"
+
+expect "Re-enter new password:"
+send "$MYSQL_ROOT_PASSWORD\r"
+
+expect "Remove anonymous users?"
 send "n\r"
 
-expect "Remove anonymous users? (Press y|Y for Yes, any other key for No) :"
-send "y\r"
+expect "Disallow root login remotely?"
+send "n\r"
 
-expect "Disallow root login remotely? (Press y|Y for Yes, any other key for No) :"
-send "y\r"
+expect "Remove test database and access to it?"
+send "n\r"
 
-expect "Remove test database and access to it? (Press y|Y for Yes, any other key for No) :"
-send "y\r"
-
-expect "Reload privilege tables now? (Press y|Y for Yes, any other key for No) :"
-send "y\r"
+expect "Reload privilege tables now?"
+send "n\r"
 
 expect eof
