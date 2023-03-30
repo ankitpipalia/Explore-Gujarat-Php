@@ -1,9 +1,11 @@
-mysql:
-  build: ./mysql
-php:
-  build: ./
-  ports:
-    - 80:80
-    - 443:443
-  links:
-    - mysql
+version: 3
+services:
+  mysql:
+    build: ./mysql
+  php:
+    build: ./
+    ports:
+      - 80:80
+      - 443:443
+    depends_on:
+      - mysql
