@@ -1,0 +1,12 @@
+#!/bin/bash
+#!/usr/bin/expect -f
+
+spawn mysql -u root -p -e "CREATE DATABASE gujarat;"
+expect "Enter password:"
+send "root1234\r"
+
+spawn mysql -u root -p gujarat < gujarat_database.sql
+expect "Enter password:"
+send "root1234\r"
+
+interact
