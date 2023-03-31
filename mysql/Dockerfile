@@ -1,13 +1,9 @@
-FROM mariadb
+FROM mysql/mysql-server
 
 ENV MYSQL_ROOT_PASSWORD=root1234
+ENV MYSQL_DATABASE=gujarat
 
-RUN service mysql start && \
-     mysql -e "ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '${MYSQL_ROOT_PASSWORD}'; FLUSH PRIVILEGES; CREATE DATABASE gujarat;"
+COPY gujarat_database.sql /
 
-COPY gujarat_database.sql /docker-entrypoint-initdb.d/
+EXPOSE 3306
 
-RUN service mysql start && \
-    mysql < /docker-entrypoint-initdb.d/database.sql
-
-ENTRYPOINT /bin/bash
