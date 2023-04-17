@@ -1,10 +1,10 @@
-FROM phpmyadmin/phpmyadmin:5.1.1
- 
-RUN apt-get update -y 
-RUN apt-get install -y git
+FROM php:7.4-apache
 
-RUN rm -rf /var/www/html/*
+RUN docker-php-ext-install mysqli
+RUN /etc/init.d/apache2 restart
 
-RUN git clone https://github.com/ankitpipalia/Explore-Gujarat-Php.git /var/www/html
+WORKDIR /var/www/html
+COPY . .
 
-RUN service apache2 restart
+EXPOSE 80
+CMD ["apache2-foreground"]

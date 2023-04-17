@@ -1,20 +1,32 @@
 version: "3"
-
 services:
+  
   mysql:
-    image: mysql
+    image: mariadb
     container_name: mysql
-    networks:
-      - my-network
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root1234
+      MYSQL_DATABASE: gujarat
+    volumes:
+      - "./db:/docker-entrypoint-initdb.d/"
+    ports:
+      - 3306
+
   php:
-    image: php
+    build: .
     container_name: php
     ports:
-      - "80:80"
-      - "443:443"
-    networks:
-      - my-network
+      - 80:80
 
-networks:
-  my-network:
-    driver: bridge
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    restart: always
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+    ports:
+      - 8081:80
+    depends_on:
+      - mysql

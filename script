@@ -1,3 +1,0 @@
-#!/bin/bash
-mysql -e -S /run/mysqld/mysqld.sock "CREATE DATABASE gujarat"
-mysql -u -S /run/mysqld/mysqld.sock root gujarat < gujarat_database.sql
